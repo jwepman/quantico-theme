@@ -154,6 +154,15 @@ a:active {
 	font-family: "Quicksand";
 	font-size: 10px;
 }
+span.content-date,
+span.content-tags {
+        font-family: "Quicksand";
+        font-size: 10px;
+        color: #666;
+	display: block;
+	text-align: right;
+	vertical-align: bottom;
+}
 
 .sidebar-container {
 	font-family: "Quicksand";
@@ -184,4 +193,11 @@ a:active {
 
 #copyright {
 	vertical-align: middle;
+}
+
+.system-message {
+	background: #FFFF99;
+	border: thin dotted #ccc;
+	font-family: "Quicksand";
+	font-size: 12px;
 }
