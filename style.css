@@ -1,0 +1,187 @@
+/*
+Theme Name: Quantico
+Theme URI: http://none-yet.com
+Description: A sleek and retro textual-content featuring theme.
+Author: jwepman
+Author URI: http://jwepman.com
+Version: 1.0
+Tags: black, grey, white, two-columns,,translation-ready
+
+License: CC-BY-NC-ND
+License URI:
+
+General comments (optional).
+*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat|Baumans|Cagliostro|Josefin+Slab|Varela+Round|Actor|Syncopate|Lancelot|Antic|Spinnaker|PT+Serif+Caption|Aubrey|Nova+Flat|Ubuntu+Mono|Nova+Round|Forum|Quicksand|Varela|Nova+Slim|Expletus+Sans|Maven+Pro|Andika|Quattrocento|Coda|Comfortaa|Numans|Raleway:100|Josefin+Sans);
+h1 {
+	font-family: "Josefin Sans";
+	font-weight: 100;
+	font-size: 48px;
+	text-align: right;
+	padding-right: 3px;
+	margin: 5px;
+}
+
+h2 {
+	font-family: "Syncopate";
+        font-weight: bold;
+        font-size: 20px;	
+}
+
+h3 {
+	font-family: "Syncopate";
+	font-weight: bold;
+        font-size: 18px;
+
+}
+
+li.widget-container {
+	list-style-type: none;
+}
+
+#searchform {
+	border: thin solid #ccc;
+	height: 20px;
+	color: #222;
+	padding: 3px;	
+	width: 180px;
+}
+
+#searchform input[type="text"] {
+	background: none;
+ 	border: 0 none;
+	float: left;
+	height: 20px;
+	line-height: 20px;
+ 	margin: 0;
+ 	width: 160px;	
+}
+
+#searchform input[type="submit"] {
+	background: url('/wp-content/themes/quantico/inc/search.jpg');
+	background-repeat: no-repeat;
+	border: 0 none;
+ 	height: 20px;
+	line-height: 20px;
+	margin: 0;
+	margin-top: 3px;
+	padding-right: 3px;
+	float:right;
+ 	width: 20px;
+}
+
+input:-moz-placeholder {
+	font-family: "Quicksand";
+	color: #bbb;
+}
+
+input:-webkit-input-placeholder {
+	font-family: "Quicksand";
+	color: #bbb;
+}
+
+div.hr {
+	/*background: -moz-linear-gradient(right, #ccc, #fff);*/
+	border-bottom: thin dotted #ccc;
+	height: 1px;
+	padding: 0px;
+	margin: 1px;
+	margin-bottom: 10px;
+}
+
+body {
+	height:100%;
+}
+
+a.header-link:link {
+	color: #000;
+	border: none;
+	text-decoration: none;
+}
+
+a.header-link:visited {
+        color: #000;
+}
+
+a.header-link:hover {
+	color: red;
+	border:none;
+	text-decoration: none;
+}
+
+
+a:link {
+        color: #000;
+        text-decoration: none;
+        border-bottom: thin dotted #ccc;
+}
+
+a:visited {
+        color: #660000;
+        border-bottom: thin solid #ccc;
+}
+
+a:hover {
+        color: red;
+}
+
+a:active {
+        color: #666;
+        border-bottom: thin solid #ccc;
+}
+
+.header-container {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.content-container {
+	margin-left: 50px;
+	margin-top: 25px;
+	border-bottom: thin dotted #ccc;
+	width: 70%;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+
+.content-title {
+	font-family: "Syncopate";
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.content-body {
+	font-family: "Quicksand";
+	font-size: 10px;
+}
+
+.sidebar-container {
+	font-family: "Quicksand";
+	font-color: #666;
+	font-size: 12px;
+	border-left: thin dotted  #ccc;
+	right: 0;
+	min-height: 100%;
+	max-width: 20%;
+	float: right;
+	margin-top: 25px;
+	text-align: left;
+	padding: 5px;
+}
+
+.footer {
+	background: rgba(210,210,210,.9);
+	bottom: 0;
+	min-width: 99%;
+	position: absolute;
+	border-top: thin dotted #ccc;
+	text-align: center;
+	font-family: "Quicksand";
+        font-color: #ccc;
+        font-size: 9px;
+	min-height: 20px;
+}
+
+#copyright {
+	vertical-align: middle;
+}
