@@ -1,0 +1,6 @@
+# cache images/pdf docs for 10 days
+<FilesMatch "\.(ico|pdf|jpg|jpeg|png|gif)$">
+  Header set Cache-Control "max-age=864000, public, must-revalidate"
+  ExpiresActive On
+  ExpiresDefault "access plus 10 days"
+</FilesMatch>

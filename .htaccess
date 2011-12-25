@@ -1,0 +1,6 @@
+# cache css docs for 30 days
+<FilesMatch "\.(css)$">
+  Header set Cache-Control "max-age=2592000, public, must-revalidate"
+  ExpiresActive On
+  ExpiresDefault "access plus 30 days"
+</FilesMatch>

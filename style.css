@@ -1,18 +1,17 @@
 /*
 Theme Name: Quantico
 Theme URI: http://none-yet.com
-Description: A sleek and retro textual-content featuring theme.
+Description: A sleek and retro theme that emphasizes simplicity, and textual content. Quantico is designed with clean and sharp literary elegance at the forefront, with a typography and color scheme that hints at distress but lends the reader a smooth and crisp blog experience.
 Author: jwepman
 Author URI: http://jwepman.com
 Version: 1.0
-Tags: black, grey, white, two-columns,,translation-ready
+Tags: black, grey, white ,translation-ready
 
 License: CC-BY-NC-ND
 License URI:
 
 General comments (optional).
 */
-@import url(http://fonts.googleapis.com/css?family=Montserrat|Baumans|Cagliostro|Josefin+Slab|Varela+Round|Actor|Syncopate|Lancelot|Antic|Spinnaker|PT+Serif+Caption|Aubrey|Nova+Flat|Ubuntu+Mono|Nova+Round|Forum|Quicksand|Varela|Nova+Slim|Expletus+Sans|Maven+Pro|Andika|Quattrocento|Coda|Comfortaa|Numans|Raleway:100|Josefin+Sans);
 h1 {
 	font-family: "Josefin Sans";
 	font-weight: 100;
@@ -35,16 +34,15 @@ h3 {
 
 }
 
-li.widget-container {
-	list-style-type: none;
-}
-
 #searchform {
 	border: thin solid #ccc;
 	height: 20px;
 	color: #222;
 	padding: 3px;	
 	width: 180px;
+	-moz-box-shadow:  0 1px 1px rgba(0,0,0,.4);
+	-webkit-box-shadow:  0 1px 1px rgba(0,0,0,.4);
+	box-shadow:  0 1px 1px rgba(0,0,0,.24);
 }
 
 #searchform input[type="text"] {
@@ -75,7 +73,7 @@ input:-moz-placeholder {
 	color: #bbb;
 }
 
-input:-webkit-input-placeholder {
+input::-webkit-input-placeholder {
 	font-family: "Quicksand";
 	color: #bbb;
 }
@@ -111,13 +109,13 @@ a.header-link:hover {
 
 
 a:link {
-        color: #000;
+        color: #663333;
         text-decoration: none;
         border-bottom: thin dotted #ccc;
 }
 
 a:visited {
-        color: #660000;
+        color: #666;
         border-bottom: thin solid #ccc;
 }
 
@@ -130,9 +128,39 @@ a:active {
         border-bottom: thin solid #ccc;
 }
 
-.header-container {
+header {
 	margin-left: 5px;
 	margin-right: 5px;
+}
+
+li {   
+        list-style-image: url('/wp-content/themes/quantico/inc/bull.jpg');
+}
+
+nav.primary-menu,
+li.menu-item,
+li.widget-container {
+        list-style-type: none;
+        list-style-image: none;
+}
+
+li.menu-item {
+	display: inline;
+	padding-right: 5px;
+}
+
+nav.primary-menu {
+        font-family: "Josefin Sans";
+	font-size: 20px;
+	margin-left: 50px;
+	padding: 5px;
+}
+
+
+.header-subtitle {
+	text-align: right;
+	font-size: 14px;
+	font-family: "Quattrocento";
 }
 
 .content-container {
@@ -154,6 +182,7 @@ a:active {
 	font-family: "Quicksand";
 	font-size: 10px;
 }
+span.content-categories,
 span.content-date,
 span.content-tags {
         font-family: "Quicksand";
@@ -164,9 +193,17 @@ span.content-tags {
 	vertical-align: bottom;
 }
 
+span.bull {
+	/* bullet point separator */
+	background: url('/wp-content/themes/quantico/inc/bull.jpg') no-repeat;
+	background-position: center;
+	min-height: 5px;
+	min-width: 5px;
+}
+
 .sidebar-container {
 	font-family: "Quicksand";
-	font-color: #666;
+	/*color: #666;*/
 	font-size: 12px;
 	border-left: thin dotted  #ccc;
 	right: 0;
@@ -186,18 +223,24 @@ span.content-tags {
 	border-top: thin dotted #ccc;
 	text-align: center;
 	font-family: "Quicksand";
-        font-color: #ccc;
         font-size: 9px;
 	min-height: 20px;
 }
 
+#credz,
 #copyright {
 	vertical-align: middle;
 }
 
+.error-message,
 .system-message {
 	background: #FFFF99;
 	border: thin dotted #ccc;
 	font-family: "Quicksand";
 	font-size: 12px;
+	padding: 3px;
+}
+
+.error-message {
+	background: rgba(204, 102, 102, .85);
 }

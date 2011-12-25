@@ -7,7 +7,7 @@
  * @since Quantico 1.0
  */
 ?>
-
+<div class="sidebar-container">
 			<ul class="xoxo">
 
 <?php
@@ -50,3 +50,4 @@
 			</ul>
 
 <?php endif; ?>
+</div>

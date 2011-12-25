@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="sidebar-container"><?php get_sidebar(); ?></div>
+<?php get_sidebar(); ?>
 <!-- 
 <div class="main-content-container">
 	<div class="content-container">
@@ -11,4 +11,5 @@
 <div class="main-content-container">
 <?php get_template_part( 'loop', 'index' ); ?>
 </div>
+<br><br>
 <?php get_footer(); ?>
