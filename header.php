@@ -18,6 +18,28 @@ Quantico Wordpress Theme Designed by Josh Wepman
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
 <?php wp_head(); ?>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+  //primary menu fade
+  jQuery('#menu-ul').children().hover(function() {
+    jQuery(this).siblings().stop().fadeTo(500,0.4);
+    jQuery('.main-content-container').stop().fadeTo(500,0.4);
+    jQuery('.sidebar-container').stop().fadeTo(500,0.4);
+  }, function() {
+    jQuery(this).siblings().stop().fadeTo(500,1);
+    jQuery('.main-content-container').stop().fadeTo(500,1);
+    jQuery('.sidebar-container').stop().fadeTo(500,1);
+  });
+  //article fade
+  jQuery('.main-content-container').children().hover(function() {
+    jQuery(this).siblings().stop().fadeTo(500,0.4);
+    jQuery('.sidebar-container').stop().fadeTo(500,0.4);
+  }, function() {
+    jQuery(this).siblings().stop().fadeTo(500,1);
+    jQuery('.sidebar-container').stop().fadeTo(500,1);
+  });
+});
+</script>
 </head>
 <body>
 <header>
@@ -26,22 +48,6 @@ Quantico Wordpress Theme Designed by Josh Wepman
 </header>
 <!-- Site Navigation -->
 <nav class="primary-menu">
-<?php wp_nav_menu(array('menu' => 'primary-menu', 'container' => false, 'items_wrap' => '%3$s', 'depth' => 1, 'fallback_cb' => 'quantico_empty_menu') ); ?>
+<?php wp_nav_menu(array('menu' => 'primary-menu', 'container' => false, 'items_wrap' => '<ul id="menu-ul">%3$s</ul>', 'depth' => 1, 'fallback_cb' => 'quantico_empty_menu') ); ?>
 </nav>
-<script type="text/javascript">
-jQuery(document).ready(function() {
-  //area 1
-  jQuery('.primary-menu').children().hover(function() {
-    jQuery(this).siblings().stop().fadeTo(500,0.5);
-  }, function() {
-    jQuery(this).siblings().stop().fadeTo(500,1);
-  });
-  //article fade
-  jQuery('.main-content-container').children().hover(function() {
-    jQuery(this).siblings().stop().fadeTo(500,0.5);
-  }, function() {
-    jQuery(this).siblings().stop().fadeTo(500,1);
-  });
-});
-</script>
 <!--<div class="hr"></div> -->

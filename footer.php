@@ -1,3 +1,4 @@
+<br><br>
 <script>
 jQuery(function(){
 	positionFooter(); 

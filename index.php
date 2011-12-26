@@ -11,5 +11,4 @@
 <div class="main-content-container">
 <?php get_template_part( 'loop', 'index' ); ?>
 </div>
-<br><br>
 <?php get_footer(); ?>

@@ -5,7 +5,7 @@
 		<div class="content-body">
 		<?php the_content(); ?>
 		</div>
-		<span class="content-tags"> <?php the_tags( 'Tags: ', '&nbsp;<span class="bull">&nbsp;</span>&nbsp;', '' ); ?> </span><span class="content-categories">Categories: <?php the_category('&nbsp;<span class="bull">&nbsp;</span>&nbsp;'); ?></span><span class="content-date">Posted: <time datetime="<?php the_time('c'); ?>" pubdate><?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?>.</time></span>
+		<span class="content-tags"><?php _e('Tags: '); ?><?php the_tags( '', '&nbsp;<span class="bull">&nbsp;</span>&nbsp;', '' ); ?> </span><span class="content-categories"><?php _e('Categories: '); ?><?php the_category('&nbsp;<span class="bull">&nbsp;</span>&nbsp;'); ?></span><span class="content-date"><?php _e('Posted on: '); ?> <time datetime="<?php the_time('c'); ?>" pubdate><?php the_time(get_option('date_format')); _e(' at '); the_time(get_option('time_format')); ?></time></span>
 	</div>
 </article>
 	<?php endwhile; else: ?>

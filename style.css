@@ -30,9 +30,11 @@ h2 {
 h3 {
 	font-family: "Syncopate";
 	font-weight: bold;
-        font-size: 18px;
+        font-size: 16px;
+	padding-top: 10px;
+	padding-left: 5px;
 
-}
+c}
 
 #searchform {
 	border: thin solid #ccc;
@@ -40,9 +42,12 @@ h3 {
 	color: #222;
 	padding: 3px;	
 	width: 180px;
-	-moz-box-shadow:  0 1px 1px rgba(0,0,0,.4);
-	-webkit-box-shadow:  0 1px 1px rgba(0,0,0,.4);
-	box-shadow:  0 1px 1px rgba(0,0,0,.24);
+}
+
+#searchform:hover {
+	-moz-box-shadow: 0 0 3px #888;
+	-webkit-box-shadow: 0 0 3px #888;
+	box-shadow: 0 0 3px #888;
 }
 
 #searchform input[type="text"] {
@@ -115,7 +120,7 @@ a:link {
 }
 
 a:visited {
-        color: #666;
+        color: #663333;
         border-bottom: thin solid #ccc;
 }
 
@@ -133,12 +138,18 @@ header {
 	margin-right: 5px;
 }
 
+#menu-ul {
+	margin: 0;
+	padding: 0;
+}
+
 li {   
         list-style-image: url('/wp-content/themes/quantico/inc/bull.jpg');
 }
 
 nav.primary-menu,
 li.menu-item,
+li.comment,
 li.widget-container {
         list-style-type: none;
         list-style-image: none;
@@ -243,4 +254,64 @@ span.bull {
 
 .error-message {
 	background: rgba(204, 102, 102, .85);
+}
+
+/* For Single Page View */
+
+.nav-previous,
+.nav-next {
+	font-family: 'Josefin Sans';
+	font-size: 14px;
+}
+
+.nav-next {
+	float: right;
+}
+
+.entry-meta,
+.commentlist,
+#commentform {
+	font-family: "Josefin Sans";
+	font-color: #555;
+	font-size: 12px;
+	padding-bottom: 10px;
+}
+
+.entry-meta {
+	float: right;
+	padding: 10px;
+	border-left: thin dotted #666;
+	max-width:: 50%;
+}
+
+textarea:focus {
+        -moz-box-shadow: 0 0 3px #888;
+        -webkit-box-shadow: 0 0 3px #888;
+        box-shadow: 0 0 3px #888;
+}
+
+#comment {
+        background: none;        border: thin solid #555;
+        float: left;
+        height: 20px;
+        margin: 0;
+	display: inline;
+}
+
+#submit {
+	background: #ddd;
+	margin-left: 5px;
+	border: thin solid #333;
+	height: 20px;
+	display: inline;
+	outline: none;
+	text-decoration:none;
+	font-family: "Josefin Sans";
+	font-size: 14px;
+}
+
+#submit:hover {
+	 -moz-box-shadow: 0 0 3px #888;
+        -webkit-box-shadow: 0 0 3px #888;
+        box-shadow: 0 0 3px #888;
 }

@@ -16,12 +16,12 @@
 	 * then the sidebar simply doesn't exist, so we'll hard-code in
 	 * some default sidebar stuff just in case.
 	 */
-	if ( ! dynamic_sidebar( 'primary-widget-area' ) ) : ?>
+?>
 
 			<li id="search" class="widget-container widget_search">
 				<?php get_search_form(); ?>
 			</li>
-
+        <?php if ( !dynamic_sidebar('sidebar-area') ) : ?>
 			<li id="archives" class="widget-container">
 				<h3 class="widget-title"><?php _e( 'Archives', 'twentyten' ); ?></h3>
 				<ul>
@@ -41,13 +41,4 @@
 		<?php endif; // end primary widget area ?>
 			</ul>
 
-<?php
-	// A second sidebar for widgets, just because.
-	if ( is_active_sidebar( 'secondary-widget-area' ) ) : ?>
-
-			<ul class="xoxo">
-				<?php dynamic_sidebar( 'secondary-widget-area' ); ?>
-			</ul>
-
-<?php endif; ?>
 </div>
