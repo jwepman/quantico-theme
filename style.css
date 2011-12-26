@@ -34,7 +34,7 @@ h3 {
 	padding-top: 10px;
 	padding-left: 5px;
 
-c}
+}
 
 #searchform {
 	border: thin solid #ccc;
@@ -94,6 +94,10 @@ div.hr {
 
 body {
 	height:100%;
+}
+
+a {
+	text-decoration: none;
 }
 
 a.header-link:link {
@@ -281,27 +285,36 @@ span.bull {
 	float: right;
 	padding: 10px;
 	border-left: thin dotted #666;
-	max-width:: 50%;
+	max-width:: 35%;
+	width: 35%;
+	margin-left: 5px;
 }
 
+#commentform
+input:focus,
 textarea:focus {
         -moz-box-shadow: 0 0 3px #888;
         -webkit-box-shadow: 0 0 3px #888;
         box-shadow: 0 0 3px #888;
 }
 
+#commentform
+#author,
+#email,
+#url,
 #comment {
-        background: none;        border: thin solid #555;
+        background: none;        border: thin solid #ccc;
         float: left;
         height: 20px;
         margin: 0;
 	display: inline;
+	margin-right: 5px;
 }
 
 #submit {
-	background: #ddd;
+	/*background: #ddd;*/
 	margin-left: 5px;
-	border: thin solid #333;
+	border: thin solid #ccc;
 	height: 20px;
 	display: inline;
 	outline: none;

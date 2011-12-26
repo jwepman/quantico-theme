@@ -13,7 +13,21 @@ Quantico Wordpress Theme Designed by Josh Wepman
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <title><?php wp_title(); ?> <?php bloginfo( 'name' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Montserrat|Baumans|Cagliostro|Josefin+Slab|Varela+Round|Actor|Syncopate|Lancelot|Antic|Spinnaker|PT+Serif+Caption|Aubrey|Nova+Flat|Ubuntu+Mono|Nova+Round|Forum|Quicksand|Varela|Nova+Slim|Expletus+Sans|Maven+Pro|Andika|Quattrocento|Coda|Comfortaa|Numans|Raleway:100|Josefin+Sans|Cagliostro' type='text/css' media='screen' />
+<script type="text/javascript">
+	//load google webfonts with appropriate behavior
+      WebFontConfig = {
+        google: { families: [ 'Josefin+Sans', 'Quicksand', 'Syncopate', 'Quattrocento'] }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+            '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+</script>
 <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" type="text/css" media="screen" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
