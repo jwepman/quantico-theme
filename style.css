@@ -36,11 +36,15 @@ h3 {
 
 }
 
+body {
+	background-color: #F4E9D7;
+}
+
 #searchform {
 	border: thin solid #ccc;
 	height: 20px;
 	color: #222;
-	padding: 3px;	
+	padding: 3px;
 	width: 180px;
 }
 
@@ -52,25 +56,25 @@ h3 {
 
 #searchform input[type="text"] {
 	background: none;
- 	border: 0 none;
+	border: 0 none;
 	float: left;
 	height: 20px;
 	line-height: 20px;
- 	margin: 0;
- 	width: 160px;	
+	margin: 0;
+  	width: 160px;
 }
 
 #searchform input[type="submit"] {
 	background: url('/wp-content/themes/quantico/inc/search.jpg');
 	background-repeat: no-repeat;
 	border: 0 none;
- 	height: 20px;
+	height: 20px;
 	line-height: 20px;
 	margin: 0;
 	margin-top: 3px;
 	padding-right: 3px;
 	float:right;
- 	width: 20px;
+	width: 20px;
 }
 
 input:-moz-placeholder {
@@ -82,7 +86,6 @@ input::-webkit-input-placeholder {
 	font-family: "Quicksand";
 	color: #bbb;
 }
-
 div.hr {
 	/*background: -moz-linear-gradient(right, #ccc, #fff);*/
 	border-bottom: thin dotted #ccc;
@@ -92,44 +95,34 @@ div.hr {
 	margin-bottom: 10px;
 }
 
-body {
-	height:100%;
-}
-
 a {
 	text-decoration: none;
 }
 
 a.header-link:link {
-	color: #000;
 	border: none;
 	text-decoration: none;
 }
 
-a.header-link:visited {
-        color: #000;
-}
-
 a.header-link:hover {
-	color: red;
 	border:none;
 	text-decoration: none;
 }
 
 
 a:link {
-        color: #663333;
+	color: #284064;
         text-decoration: none;
         border-bottom: thin dotted #ccc;
 }
 
 a:visited {
-        color: #663333;
-        border-bottom: thin solid #ccc;
+        color: #284064;
+	border-bottom: thin solid #ccc;
 }
 
 a:hover {
-        color: red;
+        color: #975F3B;
 }
 
 a:active {
@@ -231,7 +224,8 @@ span.bull {
 }
 
 .footer {
-	background: rgba(210,210,210,.9);
+	color: #f4E9D7;
+	background: rgba(175,164,146,.95);
 	bottom: 0;
 	min-width: 99%;
 	position: absolute;
@@ -265,7 +259,7 @@ span.bull {
 .nav-previous,
 .nav-next {
 	font-family: 'Josefin Sans';
-	font-size: 14px;
+	font-size: 36px;
 }
 
 .nav-next {
@@ -321,6 +315,9 @@ textarea:focus {
 	text-decoration:none;
 	font-family: "Josefin Sans";
 	font-size: 14px;
+	background-color: #F4E9D7;
+	line-height: 20px;
+	vertical-align: middle;
 }
 
 #submit:hover {
@@ -328,3 +325,4 @@ textarea:focus {
         -webkit-box-shadow: 0 0 3px #888;
         box-shadow: 0 0 3px #888;
 }
+
