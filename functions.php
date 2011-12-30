@@ -1,4 +1,6 @@
 <?php
+add_theme_support( 'post-thumbnails' );
+
 add_action( 'init', 'myOnInit' );
 function myOnInit() {
 	add_theme_support( 'automatic-feed-links' );

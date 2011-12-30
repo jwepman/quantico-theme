@@ -190,15 +190,20 @@ nav.primary-menu {
 	font-family: "Quicksand";
 	font-size: 10px;
 }
-span.content-categories,
-span.content-date,
-span.content-tags {
-        font-family: "Quicksand";
+.content-categories,
+.content-date,
+.content-tags {
+	font-family: "Quicksand";
         font-size: 10px;
         color: #666;
 	display: block;
-	text-align: right;
 	vertical-align: bottom;
+}
+
+.content-meta-container {
+	border-left: thin dotted #ccc;
+	margin-top: 5px;
+	padding-left: 5px;
 }
 
 span.bull {
@@ -326,3 +331,16 @@ textarea:focus {
         box-shadow: 0 0 3px #888;
 }
 
+/* Post Thumbnail Style */
+.thumbnail-inline {
+	float:right;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	border: thin dotted #ccc;
+}
+
+/* END Post Thumbnail Style */
+
+/* Featured Post Style on Main Page */
+/* END Featured Post Style */
